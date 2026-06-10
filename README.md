@@ -3,10 +3,14 @@ End-to-end EDA project on a real-world Cars dataset | Data cleaning, filtering &
 
 # 🚗 Exploratory Data Analysis — Cars Dataset
 
-A hands-on Data Analysis project on a real-world Cars dataset (432 vehicles), completed as part of the **Python for Data Analysis** course.
+A structured EDA project on a real-world Cars dataset, completed as part of the Python for Data Analysis course.
 
 ## 📌 Objective
-Practice core Pandas operations — data cleaning, filtering, and transformation — while building a complete EDA with visualizations and actionable insights.
+A structured EDA project on a real-world Cars dataset, completed as part of the Python for Data Analysis course.
+
+Practice core Pandas operations — data cleaning, filtering, and transformation — while building a complete exploratory data analysis (EDA) with visualizations and actionable insights.
+
+Explore and understand the dataset through statistical summaries and visual analysis, covering data structure, distributions, relationships, and key patterns.
 
 ## 📂 Dataset
 - **Source:** CarsData.csv
@@ -65,12 +69,27 @@ Use `apply()` with a lambda function to add 3 to every value in the MPG_City col
 9. Key Insights
 
 ## 💡 Key Insights
-- Strong positive correlation between Weight and Horsepower
-- Higher horsepower leads to lower city fuel efficiency (MPG_City)
-- Asian cars are the most fuel-efficient by Origin
-- Sports cars lead in horsepower; Trucks lead in weight
-- USA dominates SUV and Truck segments; Asia leads in Sedans
-- Over 20% of records had Weight > 4000 — mostly Trucks and large SUVs
+
+After analyzing **432 car records** across 15 features:
+
+1. **Heavier cars have significantly more horsepower**  
+   There is a strong positive correlation between Weight and Horsepower — confirmed by both the scatter plot and the correlation heatmap.
+
+2. **More horsepower = lower fuel efficiency**  
+   MPG_City has a clear negative correlation with Horsepower and EngineSize — high-performance cars consume more fuel in city driving.
+
+3. **Asian cars are the most fuel-efficient**  
+   The barplot of MPG_City by Origin shows Asian cars lead in city fuel efficiency, followed by European cars, with USA cars trailing behind.
+
+4. **Sports cars dominate in horsepower, Trucks in weight**  
+   The boxplot of Horsepower by Type reveals Sports cars have the highest median horsepower, while Trucks are the heaviest category.
+
+5. **USA dominates SUV and Truck segments**  
+   The categorical countplot shows that most SUVs and Trucks in the dataset originate from the USA, while Asia leads in Sedans.
+
+6. **Over 20% of records had Weight > 4000**  
+   Before filtering, a substantial portion of records exceeded the 4000 weight threshold — mostly Trucks and large SUVs from USA manufacturers.
+
 
 ## 🚀 How to Run
 ```bash
